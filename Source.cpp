@@ -10,3 +10,24 @@ struct stats {
 };
 stats selection_sort(std::vector<int>& data);
 stats shell_sort(std::vector<int>& data);
+
+template <typename T>
+void print_mas(T* arr, size_t size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		std::cout << arr[i] << " ";
+	}
+	std::cout << std::endl;
+}
+
+template <typename T>
+void print_vector(std::vector<T>& data)
+{
+	auto size = data.size();
+	for (int i = 0; i < size; i++)
+	{
+		std::cout << data[i] << " ";
+	}
+	std::cout << std::endl;
+}
