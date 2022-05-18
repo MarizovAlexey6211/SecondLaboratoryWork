@@ -82,3 +82,32 @@ stats selection_sort(std::vector<int>& data)
 	}
 	return st;
 }
+stats shell_sort(std::vector<int>& data)
+{
+	if (data.size() < 1) throw "Размер некорректен";
+	stats st;
+	st.comparison_count = 0;
+	st.copy_count = 0;
+	auto size = data.size();
+	int step = size;
+	bool last_step = true;
+	while (step > 1 || last_step)
+	{
+		last_step = false;
+		if (step > 1)
+			step = (int)(step / 2);
+		for (int i = 0; (i + step) < size; i++)
+		{
+			if (data[i] > data[i + step]) {
+
+				auto copy = data[i];
+				data[i] = data[i + step];
+				data[i + step] = copy;
+				last_step = true;
+				st.copy_count++;
+			}
+			st.comparison_count++;
+		}
+	}
+	return st;
+}
