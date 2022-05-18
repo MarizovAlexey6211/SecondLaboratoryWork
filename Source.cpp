@@ -43,3 +43,14 @@ void reverse_sort(std::vector<int>& data)
 		data[size - 1 - i] = copy;
 	}
 }
+std::vector<int> create_vector(size_t size)
+{
+	std::vector<int> data;
+	int elem = 0;
+	for (int i = 0; i < size; i++)
+	{
+		elem = -1000 + rand() % 2001;
+		data.push_back(elem);
+	}
+	return data;
+}
