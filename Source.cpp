@@ -54,3 +54,31 @@ std::vector<int> create_vector(size_t size)
 	}
 	return data;
 }
+stats selection_sort(std::vector<int>& data)
+{
+	auto size = data.size();
+	stats st;
+	st.comparison_count = 0;
+	st.copy_count = 0;
+	for (int i = 0; i < size - 1; i++)
+	{
+		int min_index = i;
+		for (int j = i + 1; j < size; j++)
+		{
+			if (data[j] < data[min_index])
+			{
+				min_index = j;
+			}
+			st.comparison_count++;
+		}
+		if (min_index != i)
+		{
+
+			auto copy = data[i];
+			data[i] = data[min_index];
+			data[min_index] = copy;
+			st.copy_count++;
+		}
+	}
+	return st;
+}
