@@ -31,3 +31,15 @@ void print_vector(std::vector<T>& data)
 	}
 	std::cout << std::endl;
 }
+
+void reverse_sort(std::vector<int>& data)
+{
+	auto size = data.size();
+	for (int i = 0; i < (size / 2); i++)
+	{
+
+		auto copy = data[i];
+		data[i] = data[size - 1 - i];
+		data[size - 1 - i] = copy;
+	}
+}
