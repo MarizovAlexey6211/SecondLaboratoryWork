@@ -84,7 +84,7 @@ stats selection_sort(std::vector<int>& data)
 }
 stats shell_sort(std::vector<int>& data)
 {
-	if (data.size() < 1) throw "Размер некорректен";
+	if (data.size() < 1) throw "incorrect size";
 	stats st;
 	st.comparison_count = 0;
 	st.copy_count = 0;
@@ -109,5 +109,27 @@ stats shell_sort(std::vector<int>& data)
 			st.comparison_count++;
 		}
 	}
+	return st;
+}
+
+stats generate_vect(size_t num, size_t size, stats sort(std::vector<int>& data))
+{
+	stats st;
+	int elem;
+	std::vector<int> vect;
+	for (int i = 0; i < num; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			elem = -1000 + rand() % 2001;
+			vect.push_back(elem);
+		}
+		stats st_sort = sort(vect);
+		vect.clear();
+		st.comparison_count += st_sort.comparison_count;
+		st.copy_count += st_sort.copy_count;
+	}
+	st.comparison_count /= num;
+	st.copy_count /= num;
 	return st;
 }
