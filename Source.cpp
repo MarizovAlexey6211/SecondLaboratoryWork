@@ -11,6 +11,14 @@ struct stats {
 stats selection_sort(std::vector<int>& data);
 stats shell_sort(std::vector<int>& data);
 
+struct info_grath
+{
+	int size;
+	std::string sort = "";
+	std::string view_vector = "";
+	stats st;
+};
+
 template <typename T>
 void print_mas(T* arr, size_t size)
 {
@@ -132,4 +140,57 @@ stats generate_vect(size_t num, size_t size, stats sort(std::vector<int>& data))
 	st.comparison_count /= num;
 	st.copy_count /= num;
 	return st;
+}
+
+void data_stats(int size, std::vector<info_grath>& data_grath)//2
+{
+	info_grath info;
+	stats sts = generate_vect(100, size, shell_sort);
+	info.size = size;
+	info.sort = "Shell";
+	info.st = sts;
+	info.view_vector = "Average";
+	data_grath.push_back(info);
+
+	auto _vect = create_vector(size);
+	auto vect = _vect;
+	shell_sort(vect);
+	sts = shell_sort(vect);
+	info.size = size;
+	info.sort = "Shell";
+	info.st = sts;
+	info.view_vector = "Sorted";
+	data_grath.push_back(info);
+
+	reverse_sort(vect);
+	sts = shell_sort(vect);
+	info.size = size;
+	info.sort = "Shell";
+	info.st = sts;
+	info.view_vector = "Back_sorted";
+	data_grath.push_back(info);
+
+	sts = generate_vect(100, size, selection_sort);
+	info.size = size;
+	info.sort = "Selection";
+	info.st = sts;
+	info.view_vector = "Average";
+	data_grath.push_back(info);
+
+
+	selection_sort(_vect);
+	sts = selection_sort(_vect);
+	info.size = size;
+	info.sort = "Selection";
+	info.st = sts;
+	info.view_vector = "Sorted";
+	data_grath.push_back(info);
+
+	reverse_sort(_vect);
+	sts = selection_sort(_vect);
+	info.size = size;
+	info.sort = "Selection";
+	info.st = sts;
+	info.view_vector = "Back_sorted";
+	data_grath.push_back(info);
 }
