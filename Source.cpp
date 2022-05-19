@@ -296,3 +296,8 @@ void insert_data_grath(std::vector<info_grath>& data_grath, std::string name)
 	}
 }
 
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+}
