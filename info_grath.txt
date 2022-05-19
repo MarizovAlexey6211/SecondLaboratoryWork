@@ -1,0 +1,71 @@
+Selection\Average
+Size = 1000	Comparison = 499500	Copy = 992
+Size = 2000	Comparison = 1999000	Copy = 1990
+Size = 3000	Comparison = 4498500	Copy = 2990
+Size = 4000	Comparison = 7998000	Copy = 3989
+Size = 5000	Comparison = 12497500	Copy = 4989
+Size = 6000	Comparison = 17997000	Copy = 5989
+Size = 7000	Comparison = 24496500	Copy = 6988
+Size = 8000	Comparison = 31996000	Copy = 7987
+Size = 9000	Comparison = 40495500	Copy = 8987
+Size = 10000	Comparison = 7045327	Copy = 9987
+
+Shell\Average
+Size = 1000	Comparison = 458205	Copy = 39570
+Size = 2000	Comparison = 1957895	Copy = 162229
+Size = 3000	Comparison = 4511442	Copy = 316204
+Size = 4000	Comparison = 8465419	Copy = 658168
+Size = 5000	Comparison = 13200875	Copy = 906760
+Size = 6000	Comparison = 19355251	Copy = 1348155
+Size = 7000	Comparison = 26365810	Copy = 1667394
+Size = 8000	Comparison = 34743273	Copy = 2653569
+Size = 9000	Comparison = 2241432	Copy = 2796949
+Size = 10000	Comparison = 11978250	Copy = 3793440
+
+Selection\Sorted
+Size = 1000	Comparison = 499500	Copy = 0
+Size = 2000	Comparison = 1999000	Copy = 0
+Size = 3000	Comparison = 4498500	Copy = 0
+Size = 4000	Comparison = 7998000	Copy = 0
+Size = 5000	Comparison = 12497500	Copy = 0
+Size = 6000	Comparison = 17997000	Copy = 0
+Size = 7000	Comparison = 24496500	Copy = 0
+Size = 8000	Comparison = 31996000	Copy = 0
+Size = 9000	Comparison = 40495500	Copy = 0
+Size = 10000	Comparison = 49995000	Copy = 0
+
+Shell\Sorted
+Size = 1000	Comparison = 8006	Copy = 0
+Size = 2000	Comparison = 18006	Copy = 0
+Size = 3000	Comparison = 30007	Copy = 0
+Size = 4000	Comparison = 40006	Copy = 0
+Size = 5000	Comparison = 55005	Copy = 0
+Size = 6000	Comparison = 66007	Copy = 0
+Size = 7000	Comparison = 77007	Copy = 0
+Size = 8000	Comparison = 88006	Copy = 0
+Size = 9000	Comparison = 108005	Copy = 0
+Size = 10000	Comparison = 120005	Copy = 0
+
+Selection\Back_sorted
+Size = 1000	Comparison = 499500	Copy = 568
+Size = 2000	Comparison = 1999000	Copy = 1241
+Size = 3000	Comparison = 4498500	Copy = 1913
+Size = 4000	Comparison = 7998000	Copy = 2635
+Size = 5000	Comparison = 12497500	Copy = 3314
+Size = 6000	Comparison = 17997000	Copy = 4028
+Size = 7000	Comparison = 24496500	Copy = 4752
+Size = 8000	Comparison = 31996000	Copy = 5487
+Size = 9000	Comparison = 40495500	Copy = 6191
+Size = 10000	Comparison = 49995000	Copy = 7072
+
+Shell\Back_sorted
+Size = 1000	Comparison = 14000	Copy = 4995
+Size = 2000	Comparison = 30000	Copy = 10729
+Size = 3000	Comparison = 51000	Copy = 16077
+Size = 4000	Comparison = 64000	Copy = 22625
+Size = 5000	Comparison = 80000	Copy = 27809
+Size = 6000	Comparison = 108000	Copy = 33682
+Size = 7000	Comparison = 126000	Copy = 38981
+Size = 8000	Comparison = 136000	Copy = 46696
+Size = 9000	Comparison = 153000	Copy = 50997
+Size = 10000	Comparison = 170000	Copy = 57445

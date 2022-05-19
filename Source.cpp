@@ -300,4 +300,25 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	srand(time(NULL));
+	std::vector<int> sizes = { 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000 };
+	std::vector<info_grath> data_grath;
+	auto vect = create_vector(10);
+	std::cout << "Демонстрация работы сортировки\n" << std::endl;
+	std::cout << "Изначальный вектор" << std::endl;
+	print_vector(vect);
+	auto v2 = vect;
+	selection_sort(v2);
+	std::cout << "Отсортированный сортировкой Выбором" << std::endl;
+	print_vector(v2);
+	auto v3 = vect;
+	shell_sort(v3);
+	std::cout << "Отсортированный сортировкой Шелла" << std::endl;
+	print_vector(v3);
+
+	for (int i = 0; i < sizes.size(); i++)
+	{
+		data_stats(sizes[i], data_grath);
+	}
+	insert_data_grath(data_grath, "info_grath.txt");
+	return 0;
 }
