@@ -194,3 +194,105 @@ void data_stats(int size, std::vector<info_grath>& data_grath)//2
 	info.view_vector = "Back_sorted";
 	data_grath.push_back(info);
 }
+
+void insert_data_grath(std::vector<info_grath>& data_grath, std::string name)
+{
+	fstream f;
+	f.open(name, fstream::in | fstream::out | fstream::app);
+	bool flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Selection")
+		{
+			if (data_grath[i].view_vector == "Average")
+			{
+				if (flag) {
+					f << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+
+	flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Shell")
+		{
+			if (data_grath[i].view_vector == "Average")
+			{
+				if (flag) {
+					f << "\n" << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+
+	flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Selection")
+		{
+			if (data_grath[i].view_vector == "Sorted")
+			{
+				if (flag) {
+					f << "\n" << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+
+	flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Shell")
+		{
+			if (data_grath[i].view_vector == "Sorted")
+			{
+				if (flag) {
+					f << "\n" << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+
+	flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Selection")
+		{
+			if (data_grath[i].view_vector == "Back_sorted")
+			{
+				if (flag) {
+					f << "\n" << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+
+	flag = true;
+	for (int i = 0; i < data_grath.size(); i++)
+	{
+		if (data_grath[i].sort == "Shell")
+		{
+			if (data_grath[i].view_vector == "Back_sorted")
+			{
+				if (flag) {
+					f << "\n" << data_grath[i].sort << "\\" << data_grath[i].view_vector << std::endl;
+					flag = false;
+				}
+				f << "Size = " << data_grath[i].size << "\t" << "Comparison = " << data_grath[i].st.comparison_count << "\tCopy = " << data_grath[i].st.copy_count << std::endl;
+			}
+		}
+	}
+}
+

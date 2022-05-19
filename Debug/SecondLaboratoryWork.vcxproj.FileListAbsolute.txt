@@ -1,0 +1,2 @@
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Debug\SecondLaboratoryWork.exe
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Debug\SecondLaboratoryWork.pdb

@@ -1,0 +1,19 @@
+﻿  Source.cpp
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(46,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(58,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(71,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(74,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(107,30): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(128,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(130,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(203,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(219,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(235,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(251,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(267,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(283,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(302,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(318,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(36,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Professional\source\repos\SecondLaboratoryWork\Source.cpp(308): message : выполняется компиляция ссылки на экземпляр шаблон функции "void print_vector<int>(std::vector<int,std::allocator<int>> &)"
+  SecondLaboratoryWork.vcxproj -> C:\Users\Professional\source\repos\SecondLaboratoryWork\Debug\SecondLaboratoryWork.exe
